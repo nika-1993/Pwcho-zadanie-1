@@ -2,18 +2,17 @@ import java.sql.*;
 
 public class MyApp{
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://mysql:3306/pwcho2018";
+    static final String DB_URL = "jdbc:mysql://10.0.10.3:3306/pwcho2018";
     
     static final String USER = "msliwczynska";
     static final String PASS = "password";
     
-    static Connection conn = null;
-    static Statement stmt = null;
-    static String sql;
-    
     
     public static void main(String[] args) throws InterruptedException {
-        
+    
+        Connection conn = null;
+        Statement stmt = null;
+        String sql;        
         Boolean login = true;
         Boolean tableExists = false;
         
